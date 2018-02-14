@@ -69,7 +69,7 @@ router.delete('/:id', (req, res) => {
             console.log('Error while deleting todo.\n'+ err);
             res.json({'success': false, 'message':'Some error', 'data':err});
         } else {
-            res.json({'success': true, 'message': deletedTodo.title + ' deleted successfully!', 'data':deletedTodo});
+            res.json({'success': true, 'message': ' deleted successfully!', 'data':deletedTodo});
         }
     });
 });
